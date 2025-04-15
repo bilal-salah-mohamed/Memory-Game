@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img class="img-logo" src="img/logo.png" alt="">
+        </div>
+        <div class="head">
+            <p>Mem Game</p>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i style="margin-right: 30px;" class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+        <i style="margin-right: 30px;" class=" ham fa-solid fa-arrow-right-to-bracket"></i>
+
+    </nav>
+    <div class="data">
+        <div class="containn">
+            <p class="moves">Moves : 0 <span></span></p>
+            <p class="score">Score : <span></span></p>
+            <p class="Timer">Timer : 0<span></span></p>
+            <button class="btnn" type="submit">Reset</button>
+        </div>
+        
+    </div>
+    <div class="fleber-container" id="imgContainer">
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/VOLOV-removebg-preview.png" alt="">
+            </div>
+        </div> 
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/VOLOV-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/ALFA-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/ALFA-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/BMW_Logo_-_PNG_Logo_Vector_Brand_Downloads__SVG__EPS_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/BMW_Logo_-_PNG_Logo_Vector_Brand_Downloads__SVG__EPS_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/CHEV-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/CHEV-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/download__3_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/download__3_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/PORCH-removebg-preview.png" alt="">
+            </div>
+        </div> 
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/PORCH-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img  src="img/Vehicle_3D_Models-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img  src="img/Vehicle_3D_Models-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/GMC_Logo__GMC_Car_Symbol_Meaning_and_History___Car_Brand_Name-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/GMC_Logo__GMC_Car_Symbol_Meaning_and_History___Car_Brand_Name-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/M-removebg-preview (1).png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/M-removebg-preview (1).png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LADA-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LADA-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Maserati_logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Maserati_logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LAND_ROVER-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LAND_ROVER-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/MRC-removebg-preview (1).png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/MRC-removebg-preview (1).png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Logos-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Logos-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Marque_de_voiture_Espagnes_liste__constructeurs_automobile_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Marque_de_voiture_Espagnes_liste__constructeurs_automobile_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LAM-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/LAM-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/ZENVO_Logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/ZENVO_Logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Elfin-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Elfin-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/DUCATI_Logo_design___Vector___Instant_Download___Print_Cut_Template___png___svg___eps___dxf___jpg-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/DUCATI_Logo_design___Vector___Instant_Download___Print_Cut_Template___png___svg___eps___dxf___jpg-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Tesla_Motors___Brands_of_the_World____Download_vector_logos_and_logotypes-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="fliber">
+            <div class="flep front"></div>
+            <div class="flep back">
+                <img src="img/Tesla_Motors___Brands_of_the_World____Download_vector_logos_and_logotypes-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="tools/fontawesome/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
